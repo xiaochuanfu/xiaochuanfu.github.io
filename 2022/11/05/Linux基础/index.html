@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://xiaochuanfu.github.io/media/placeholder/readme.html"/>
+  <link rel="canonical" href="https://xiaochuanfu.github.io/2022/11/05/linux基础/"/>
   <!-- 渲染优化 -->
   <!-- <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -20,25 +20,25 @@
   <meta content="XiaoFu&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1667656821138" as="style">
+  <link rel="preload" href="/css/style.css?time=1667656821183" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>XiaoFu's Blog</title>
-  <meta name="keywords" content="XiaoFu">
-  <meta name="description" content="CDN获取路径： https:&#x2F;&#x2F;www.jsdelivr.com&#x2F;package&#x2F;gh&#x2F;cdn-x&#x2F;placeholder 文件路径： https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;cdn-x&#x2F;placeholder&#x2F;README.md">
-<meta property="og:type" content="website">
-<meta property="og:title" content="XiaoFu&#39;s Blog">
-<meta property="og:url" content="https://xiaochuanfu.github.io/media/placeholder/README.html">
+  <title>Linux - XiaoFu's Blog</title>
+  <meta name="keywords" content="linux,XiaoFu">
+  <meta name="description" content="一、linux目录 二、Linux学习路线 三、Vim使用 四、初识Linux 2.1. 文件相关 chmod更改文件权限 基本用法： chmod  [选项]  模式  文件 模式对应相应的权限，可以是数字法，也可以是文字法 一个文件对应拥有三种角色的权限设定： 拥有者 所属组 其他     数字法和文字法 数字法：r : 4 可读，w : 2 可写，x : 1 可执行 r-x：5，rw-：6，r">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux">
+<meta property="og:url" content="https://xiaochuanfu.github.io/2022/11/05/Linux%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="XiaoFu&#39;s Blog">
-<meta property="og:description" content="CDN获取路径： https:&#x2F;&#x2F;www.jsdelivr.com&#x2F;package&#x2F;gh&#x2F;cdn-x&#x2F;placeholder 文件路径： https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;cdn-x&#x2F;placeholder&#x2F;README.md">
+<meta property="og:description" content="一、linux目录 二、Linux学习路线 三、Vim使用 四、初识Linux 2.1. 文件相关 chmod更改文件权限 基本用法： chmod  [选项]  模式  文件 模式对应相应的权限，可以是数字法，也可以是文字法 一个文件对应拥有三种角色的权限设定： 拥有者 所属组 其他     数字法和文字法 数字法：r : 4 可读，w : 2 可写，x : 1 可执行 r-x：5，rw-：6，r">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://xiaochuanfu.github.io/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2022-11-02T15:02:32.896Z">
-<meta property="article:modified_time" content="2022-11-02T15:02:32.896Z">
+<meta property="article:published_time" content="2022-11-05T13:33:32.000Z">
+<meta property="article:modified_time" content="2022-11-05T13:55:35.771Z">
 <meta property="article:author" content="Xiao">
-<meta property="article:tag" content="XiaoFu">
+<meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://xiaochuanfu.github.io/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1819,8 +1819,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1667656821138" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1667656821138"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1667656821183" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1667656821183"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1897,7 +1897,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1667656821138","sites":"/js/plugins/sites.js?time=1667656821138","friends":"/js/plugins/friends.js?time=1667656821138","parallax":"/js/plugins/parallax.js?time=1667656821138","rightMenu":"/js/plugins/rightMenu.js?time=1667656821138","contributors":"/js/plugins/contributors.js?time=1667656821138","message":"/js/thirdparty/message.js?time=1667656821138","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1667656821138","search":"/js/search/hexo.js?time=1667656821138"},"css":{"style":"/css/style.css?time=1667656821138","message":"/css/message.css?time=1667656821138"}},
+    cdn: {"js":{"app":"/js/app.js?time=1667656821183","sites":"/js/plugins/sites.js?time=1667656821183","friends":"/js/plugins/friends.js?time=1667656821183","parallax":"/js/plugins/parallax.js?time=1667656821183","rightMenu":"/js/plugins/rightMenu.js?time=1667656821183","contributors":"/js/plugins/contributors.js?time=1667656821183","message":"/js/thirdparty/message.js?time=1667656821183","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1667656821183","search":"/js/search/hexo.js?time=1667656821183"},"css":{"style":"/css/style.css?time=1667656821183","message":"/css/message.css?time=1667656821183"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
     lastupdate: new Date('Sat Nov 05 2022 22:00:21 GMT+0800 (中国标准时间)'),
     sidebar: {
@@ -2768,7 +2768,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper page dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://api.btstu.cn/sjbz/api.php?lx=dongman&format=images"></div>
 
@@ -2831,8 +2831,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-page" id="page" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://xiaochuanfu.github.io/media/placeholder/README.html">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://xiaochuanfu.github.io/2022/11/05/Linux%E5%9F%BA%E7%A1%80/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="XiaoFu's Blog">
   </span>
@@ -2852,22 +2852,553 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <span hidden itemprop="name headline">
+      <h1 class="title" itemprop="name headline">
+        Linux
+      </h1>
+      <div class='new-meta-box'>
         
-      </span>
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-11-05T21:33:32+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Nov 5, 2022</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse busuanzi">
+    <a class='notlink'>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      <p>
+        <span id="busuanzi_value_page_pv">
+          <i class="fa-solid fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i>
+        </span>
+        次浏览
+      </p>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
 
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h1 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h1><p>获取路径： <a target="_blank" rel="noopener" href="https://www.jsdelivr.com/package/gh/cdn-x/placeholder">https://www.jsdelivr.com/package/gh/cdn-x/placeholder</a></p>
-<p>文件路径：</p>
-<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/cdn-x/placeholder/README.md">https://cdn.jsdelivr.net/gh/cdn-x/placeholder/README.md</a></p>
+    <h1 id="一、linux目录"><a href="#一、linux目录" class="headerlink" title="一、linux目录"></a>一、linux目录</h1><p><img src="http://124.222.18.192/BlogImage/2022/11/202211052130029.png" class="lazyload" data-srcset="http://124.222.18.192/BlogImage/2022/11/202211052130029.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h1 id="二、Linux学习路线"><a href="#二、Linux学习路线" class="headerlink" title="二、Linux学习路线"></a>二、Linux学习路线</h1><p><img src="http://124.222.18.192/BlogImage/2022/11/202211052130042.png" class="lazyload" data-srcset="http://124.222.18.192/BlogImage/2022/11/202211052130042.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h1 id="三、Vim使用"><a href="#三、Vim使用" class="headerlink" title="三、Vim使用"></a>三、Vim使用</h1><p><img src="http://124.222.18.192/BlogImage/2022/11/202211052129112.jpg" class="lazyload" data-srcset="http://124.222.18.192/BlogImage/2022/11/202211052129112.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h1 id="四、初识Linux"><a href="#四、初识Linux" class="headerlink" title="四、初识Linux"></a>四、初识Linux</h1><hr>
+<h2 id="2-1-文件相关"><a href="#2-1-文件相关" class="headerlink" title="2.1. 文件相关"></a>2.1. 文件相关</h2><div class="story post-story"><ul>
+<li><code>chmod</code><strong>更改文件权限</strong><ul>
+<li>基本用法：<ul>
+<li><strong>chmod  [选项]  模式  文件</strong></li>
+<li>模式对应相应的权限，可以是<strong>数字法</strong>，也可以是<strong>文字法</strong></li>
+<li>一个文件对应拥有三种角色的权限设定：<ul>
+<li>拥有者</li>
+<li>所属组</li>
+<li>其他</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>数字法和文字法<ul>
+<li><strong>数字法</strong>：r : 4 可读，w : 2 可写，x : 1 可执行<ul>
+<li>r-x：5，rw-：6，rwx：7</li>
+</ul>
+</li>
+<li><strong>文字法</strong>：<ul>
+<li>u：拥有者，g：所属组，o：其他，a：全部</li>
+<li>+：增加，-：减去，&#x3D;：设定</li>
+<li>eg：<ul>
+<li>u+w   给拥有者增加‘w’权限</li>
+<li>ugo-x 给拥有者、所属用户、其他用户减去’可执行’权限</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>ls</code>：查看文件信息<ul>
+<li>-l </li>
+<li>-al</li>
+</ul>
+</li>
+<li><code>cd</code>：进入文件夹<ul>
+<li><code>.</code>：当前目录</li>
+<li><code>..</code>：上一级目录</li>
+</ul>
+</li>
+<li><code>cp</code>：复制文件</li>
+<li><code>rm</code>：删除文件</li>
+<li><code>mv</code>：移动文件，重命名文件</li>
+<li><code>touch</code>：创建一个空文件，路径为当前路径</li>
+<li><strong>搜索文件</strong>：<ul>
+<li><code>whereis</code></li>
+<li><code>which</code>：在$PATH环境变量中指定的路径来搜索可执行文件所在的位置，<strong>一般用来确认系统是否安装了指定的软件</strong> </li>
+<li><code>type</code>：type命令是用来判断一个命令是否属于shell内置的</li>
+<li><code>find</code>：非常强大的命令，效率差，整个文件下查找</li>
+</ul>
+</li>
+<li><strong>压缩解压文件：</strong><ul>
+<li><strong>解压缩</strong><ul>
+<li><code>tar -vx -f filename</code></li>
+<li><code>tar -vxf filename</code></li>
+</ul>
+</li>
+<li><strong>压缩</strong>：相比解压缩多一个命令选项，即采用的压缩算法，z代表gz，j代表bz2，J代表xz<ul>
+<li><code>tar -zcvf filename.tar.gz FILES</code>或</li>
+<li><code>tar -jcvf filename.tar.bz2 FILES</code></li>
+<li><code>tar -Jcvf filename.tar.xz FILES</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+</div><h2 id="2-2-程序执行相关"><a href="#2-2-程序执行相关" class="headerlink" title="2.2. 程序执行相关"></a>2.2. 程序执行相关</h2><div class="story post-story"><ul>
+<li><p><strong>Linux多任务协调机制</strong></p>
+<ul>
+<li>管道<ul>
+<li>匿名管道</li>
+<li>命名管道</li>
+</ul>
+</li>
+<li>I&#x2F;O重定向<ul>
+<li>显式重定向</li>
+<li>隐式重定向</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>管道</strong></p>
+<ul>
+<li>概念：管道是Linux系统提供的多任务协调机制的一种，可分为<strong>匿名管道</strong>和<strong>命名管道</strong></li>
+<li>匿名管道的创建采用<code>|</code></li>
+<li>命名管道的创建使用<code>mkfifo</code> ，文件类型是<code>p</code></li>
+</ul>
+</li>
+<li><p><strong>I&#x2F;O重定向</strong></p>
+<ul>
+<li>显式重定向<ul>
+<li><code>&gt;</code></li>
+<li><code>&lt;</code></li>
+</ul>
+</li>
+<li>隐式重定向<ul>
+<li>如匿名管道的使用</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>多任务</strong></p>
+<ul>
+<li><p><strong>创建</strong>一个后台任务，直接在命令行末尾添加<code>&amp;</code>来完成</p>
+</li>
+<li><p><strong>查看</strong>后台任务，采用命令<code>jobs</code></p>
+</li>
+<li><p><strong>切换</strong>前台任务至后台，采用命令<code>bg</code></p>
+</li>
+<li><p><strong>切换</strong>后台任务至前台，采用命令<code>fg</code></p>
+</li>
+<li><p><strong>关闭</strong>任务</p>
+<ul>
+<li>前台任务：<code>Ctrl+C</code></li>
+<li>后台任务：<code>kill -num %pid</code></li>
+<li>关闭当前终端，前后台任务均会被干掉</li>
+<li>将任务脱离终端，采用命令<code>nohup</code><ul>
+<li><code>nohup [命令参数] &amp;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>计划</strong>任务执行：</p>
+<ul>
+<li><p>一次性任务：<code>at</code></p>
+</li>
+<li><p>周期性任务：<strong>cron</strong>，利用cron表，使用<code>crontab命令</code>来安排周期性任务</p>
+<ul>
+<li><code>corntab -e</code> 打开编辑cron表</li>
+<li><code>crontab -l</code>查看当前用户的cron表</li>
+<li><code>corntab -r</code>删除当前用户的cron进程</li>
+<li><code>corntab -u 用户名</code>以某用户的身份来控制cron表</li>
+<li>一个cron任务的完整定义为：<ul>
+<li>分钟 小时 日 月 周 [用户名] 命令</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">符号</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+</table>
+<pre><code>  |  *   |                 代表任意时间                 |
+  |  ，  | 代表分隔出不连续的时间点，比如2,3表示2,3都行 |
+  |  -   |    代表连续的时间段，比如2-4，表示2、3、4    |
+  | */n  |               表示每隔单位时间               |
+</code></pre>
+<ul>
+<li><p><strong>了解程序信息</strong></p>
+<ul>
+<li><code>ps</code>：查看程序的静态信息，即某个时间的程序运行状况撷取下来<ul>
+<li><code>ps aux</code>查看<strong>系统中所有程序</strong>的数据</li>
+<li><code>ps ux</code>查看<strong>当前用户</strong>所有程序的数据</li>
+<li><code>ps -l</code>查看与<strong>当前终端关联</strong>的程序数据</li>
+</ul>
+</li>
+<li><code>top</code>：动态监测系统中程序的运行状态<ul>
+<li><code>top -d</code>更改top刷新频率，默认5s刷新一次</li>
+<li><code>top -p PID</code>单独追踪某个进程的运行状态</li>
+</ul>
+</li>
+<li><code>pstree</code>：查看进程的父子祖先关系</li>
+</ul>
+</li>
+<li><p>shell相关</p>
+<ul>
+<li><p>相关环境</p>
+<ul>
+<li>进程的权限</li>
+<li>工作目录</li>
+<li>文件创建掩码<ul>
+<li>特殊变量<ul>
+<li>局部变量</li>
+<li>环境变量（可以采用set、env、export设置环境变量，使用unset清除设置）<ul>
+<li>PATH</li>
+<li>HOME</li>
+<li>LOGNAME</li>
+<li>IFS</li>
+<li>SHELL</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>打开的文件和信号</li>
+</ul>
+</li>
+<li><p>配置相关</p>
+<ul>
+<li><strong>系统层</strong>的函数、别名和环境等设置一般在<code>/etc/profile</code></li>
+<li>用户层的相关配置在<code>~/.bash_profile</code>、 <code>~/.bash_login</code> 和 <code>~/.profile</code>中，主要是<code>~/.bash_profile</code>，如果<code>./bashrc</code>文件存在，<code>~/.bash_profile</code>还会调用</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://124.222.18.192/wp-content/uploads/2022/03/1.png" class="lazyload" data-srcset="http://124.222.18.192/wp-content/uploads/2022/03/1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<hr>
+</div><h2 id="2-3-软件安装"><a href="#2-3-软件安装" class="headerlink" title="2.3. 软件安装"></a>2.3. 软件安装</h2><div class="story post-story"><ul>
+<li><p>从源代码安装软件</p>
+<ol>
+<li>configure：检查待安装源码的Linux系统的相关软件属性，创建Makefile文件</li>
+<li>make：根据Makefile的指示开展编译工作，理由gcc将原始代码编译成目标文件，这些目标文件通过函数库链接产生完整的可执行文件</li>
+<li>make install：make根据Makefile这个文件里面关于install的项目，将上一个步骤所编译完成的文件安装到预定的目录中</li>
+</ol>
+</li>
+<li><p>利用软件管理工具安装</p>
+<blockquote>
+<p>提供了软件包的安装、更新、和卸载</p>
+</blockquote>
+<ul>
+<li>rpm：<strong>Red Hat</strong>包管理器<ul>
+<li>安装：<code>rpm -ivh &lt;rpm 软件包名&gt;</code></li>
+<li>查询：<code>rpm -qa xxx*</code>，<code>rpm -ql &lt;rpm 包名&gt;</code></li>
+<li>卸载：<code>rpm -e&lt;rpm 软件名&gt;</code></li>
+</ul>
+</li>
+<li>dpkg：<strong>Debian</strong>软件包管理器<ul>
+<li>安装：<code>dpkg -i &lt;deb 软件包名&gt;</code></li>
+<li>查询：<ul>
+<li><code>dpkg -l xxx*</code>通配符模式进行模糊查询，xxx指软件名称开头的几个字母</li>
+<li><code>dpkg --listfiles xxx</code>查询系统中属于xxx软件的文件</li>
+</ul>
+</li>
+<li>卸载：<code>dpkg -e &lt;deb 软件名&gt;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>线上升级&#x2F;安装</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">项目</th>
+<th>yum</th>
+<th>apt-get</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">简介</td>
+<td>Red Hat 版本使用</td>
+<td>Debian 版本使用</td>
+</tr>
+<tr>
+<td align="center">安装</td>
+<td><code>yum install &lt;package_name&gt;</code></td>
+<td><code>apt-get install &lt;package_name&gt;</code></td>
+</tr>
+<tr>
+<td align="center">升级</td>
+<td><code>yum update &lt;package_name&gt;</code></td>
+<td>刷新软件源，建立更新软件包列表<code>apt-get update</code><br />将系统中的所有软件包一次性升级到最新的版本<code>apt-get upgrade</code></td>
+</tr>
+<tr>
+<td align="center">卸载</td>
+<td><code>yum remove &lt;package_name&gt;</code></td>
+<td><code>apt-get remove &lt;package_name&gt;</code><br />清除软件包同时清除配置<br /><code>apt-get purge remove &lt;package_name&gt;</code></td>
+</tr>
+<tr>
+<td align="center">查询</td>
+<td>1. 查询软件包：<code>yum search &lt;keyword&gt;</code> <br />2. 列出所有已安装的软件包：<code>yum list installed</code><br />3. 获取包信息：<code>yum info &lt;package_name&gt;</code><br />4. 列出软件包提供哪些文件：<code>yum provides &lt;package_name&gt;</code></td>
+<td>1. 查找软件包：<br /><code>apt-cache search &lt;keyword&gt; or &lt;regular expression&gt;</code><br />2. 获取指定软件包的详细信息：<code>apt-cache show &lt;package_name&gt;</code><br />3. 获取软件包版本和软件包的依赖关系：<br /><code>apt-cache showpkg &lt;package_name</code></td>
+</tr>
+<tr>
+<td align="center">清楚缓存</td>
+<td>下载的软件包和 header 存储在 cache 中不会自动删除。使用<code>yum clean</code>完成清除磁盘空间的操作：<br />1. 清除 header:<br /><code>yum clean headers</code><br />2. 清除下载的rpm包:<br /><code>yum clean packages</code><br />3. 清除缓存的软件包及旧 headers:<br /><code>yum clean all</code></td>
+<td>1. 清理整个软件包缓冲区：<br /><code>apt-get clean</code><br />2. 按照依赖关系清理缓冲区中多余的软件包：<br /><code>apt-get autoclean</code></td>
+</tr>
+</tbody></table>
+<hr>
+</div><h2 id="2-4-磁盘的管理方式"><a href="#2-4-磁盘的管理方式" class="headerlink" title="2.4. 磁盘的管理方式"></a>2.4. 磁盘的管理方式</h2><div class="story post-story"><h3 id="2-4-1-文件系统"><a href="#2-4-1-文件系统" class="headerlink" title="2.4.1 文件系统"></a>2.4.1 文件系统</h3><p>Linux采用<strong>设备文件</strong>来<strong>描述</strong>一个<strong>设备</strong>。</p>
+<p><strong>交换分区</strong>（swap）同Windows的页面文件是相同的概念，就是虚拟内存管理是要使用的内存置换文件，就是用来扩展虚拟内存空间的</p>
+<p>Linux采用的文件系统为**ExtN (N&#x3D;2,3,4)**，是一种<code>索引式文件系统</code>，包含<code>inode</code>数据结构代表一个文件，并存储这个文件的各种属性和权限，实际数据存放在<code>data block</code>块区中，此外还包括一个超级块区<code>superblock</code>，用于记录整个文件系统的整体信息。ExtN文件系统可以通过inode一次性获得文件数据存放的位置，并据此安排磁盘的阅读顺序，尽量保证磁盘在旋转一周的情况下将所有内容读取出来。</p>
+<p>Window采用的文件系统是FAT32&#x2F;NTFS，FAT32是一种<code>链式文件系统</code>，也包含<code>data block</code>来存储实际数据，但是FAT32只有将对应的<code>data block</code>读入之后，才知道下一个<code>data block</code>的位置，如果一个文件的data block比较分散的话，很难保证在磁盘只旋转一圈的情况下读取全部数据，有时候甚至要旋转很多圈才能读完数据，这就是所谓的“磁盘碎片”问题。</p>
+<h3 id="2-4-2-磁盘的基本操作"><a href="#2-4-2-磁盘的基本操作" class="headerlink" title="2.4.2 磁盘的基本操作"></a>2.4.2 磁盘的基本操作</h3><p>磁盘是文件的载体，磁盘的基本操作包含df，du，dd，fsck，mount。</p>
+<ul>
+<li><code>df</code>：查看系统中所有磁盘的整体使用量，是<strong>总体</strong>的磁盘使用量，采用读取磁盘的superblock实现</li>
+<li><code>du</code>：查看<strong>局部</strong>使用量，它搜索所有的inode来计算局部数据，效率较差</li>
+<li><code>dd</code>：可以读写磁盘的每一个扇区，或者镜像整个磁盘<ul>
+<li>命令格式为：<code>dd if=input_file of=out_file</code></li>
+</ul>
+</li>
+<li><code>fsck</code>：对文件系统的损坏进行修复<ul>
+<li><code>fsck -t 文件系统 设备名</code></li>
+</ul>
+</li>
+<li><code>mount</code>：用于将某些设备上找到的文件系统附加到大文件树上<ul>
+<li>标准格式：<code>mount [-t 文件系统] 设备名称 挂载点</code></li>
+<li>eg：<ul>
+<li>将系统的第二块串口硬盘的第一个分区挂接到&#x2F;data目录下，<code>mount /dev/sdb1 /data</code>，或 <code>mount -t vfat /dev/sdb1 /data</code></li>
+<li>将下载到的*.iso文件也可以使用同样的方法挂接到某个目录上直接访问：<code>mount -o loop ./CentOS-6.4-x86_64-bin-DVD1.iso /mnt/centos</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>umount</code>：卸载挂载点 <code>umount /data</code></li>
+<li><code>fdisk</code>：磁盘分区</li>
+<li><code>mkfs</code>：格式化命令</li>
+</ul>
+<h3 id="2-4-3-x2F-etc-x2F-fstab-文件"><a href="#2-4-3-x2F-etc-x2F-fstab-文件" class="headerlink" title="2.4.3   &#x2F;etc&#x2F;fstab 文件"></a>2.4.3   &#x2F;etc&#x2F;fstab 文件</h3><ul>
+<li>作用<strong>决定磁盘各个分区挂接的目录</strong></li>
+<li>交换分区：<ul>
+<li>创建：<code>fdisk</code></li>
+<li>格式化：<code>mkswap</code></li>
+<li>挂接：<code>swapon</code></li>
+<li>关闭：<code>swapoff</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="2-4-4-弹性调整容量——逻辑卷"><a href="#2-4-4-弹性调整容量——逻辑卷" class="headerlink" title="2.4.4  弹性调整容量——逻辑卷"></a>2.4.4  弹性调整容量——逻辑卷</h3><ul>
+<li><p>概念：就是在磁盘分区和文件系统之间增加一个逻辑层，使得完成弹性调整文件系统的容量。Linux中实现逻辑卷功能的是LVM(Logical Volume Manager，逻辑卷管理器)，CentOS是默认支持的</p>
+</li>
+<li><p>LVM内容：</p>
+<ul>
+<li><p>PV，物理卷，是LVM的基本存储单元，包含与LVM相关的管理参数</p>
+</li>
+<li><p>VG，卷组，类似于非LVM的物理硬盘，由多个物理卷组成，可以在卷组上创建一个或者多个LVM分区</p>
+</li>
+<li><p>PE，物理扩展区，由每一个物理卷划分而成的，是LVM的最小存储区，与物理磁盘的”扇区“的基本概念相同。</p>
+<p>LVM的默认PE大小是4M，每个卷组最多能含65534个PE，所以一个卷组最大的容量是4M*65534&#x3D;256G，如果改变PE的大小，就能改变卷组的最大容量。</p>
+</li>
+<li><p>LV，逻辑卷，在卷组之上再进行切分，与在物理磁盘上继续划分分区是一个道理，但是逻辑卷大小必须是PE的整数倍。</p>
+</li>
+<li><p>LVM的构成图：</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://124.222.18.192/wp-content/uploads/2022/03/2.png" class="lazyload" data-srcset="http://124.222.18.192/wp-content/uploads/2022/03/2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>到了具体的逻辑卷上，就可以应用mkfs命令进行格式化了，如此一来就能够使用mount命令挂载到系统中了。</p>
+<ul>
+<li><p>基本操作</p>
+<ul>
+<li>创建物理卷</li>
+<li>创建卷组VG</li>
+<li>创建逻辑卷LV</li>
+</ul>
+</li>
+</ul>
+<hr>
+</div><h2 id="2-5-Linux-上网问题"><a href="#2-5-Linux-上网问题" class="headerlink" title="2.5 Linux 上网问题"></a>2.5 Linux 上网问题</h2><div class="story post-story"><h3 id="2-5-1-背景知识："><a href="#2-5-1-背景知识：" class="headerlink" title="2.5.1 背景知识："></a>2.5.1 背景知识：</h3><p><strong>子网掩码</strong>，在ipv4中，子网掩码是一个四字节数，其中<code>网络部分</code>都为<strong>1</strong>，<code>主机部分</code>都为<strong>0</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">//eg:255.255.255.0 这个掩码</span></span><br><span class="line"> <span class="number">11111111.11111111</span><span class="number">.11111111</span><span class="number">.00000000</span></span><br><span class="line"> |---------网络部分----------|-主机部分-|</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 这个掩码中，一个子网最多只能拥有254个主机，0被用来最为网络地址</span></span><br><span class="line"><span class="comment"> * 255 被用来作广播地址</span></span><br><span class="line"><span class="comment"> * 实际使用是，上诉写法国语繁琐，采用“/网络位数“方法表示</span></span><br><span class="line"><span class="comment"> * 如：192.168.1.1/24，24表示子网掩码的前24位都是1</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
 
+<p>子网掩码(255.255.255.0)与主机地址的IP地址(A.B.C.D)进行按位<code>与</code>运算，就会得到A.B.C.0这样的值，这就表明A.B.C是网络地址，而最后那个被<code>与</code>掉的就是主机地址。</p>
+<p>ipv4是<strong>32</strong>位地址，ipv6是<strong>128</strong>位地址</p>
+<h3 id="2-5-2-相关配置"><a href="#2-5-2-相关配置" class="headerlink" title="2.5.2 相关配置"></a>2.5.2 相关配置</h3><p>网络的配置文件在<code>/etc/network/interfaces</code>中</p>
+<ul>
+<li>直接连接上网：<ul>
+<li>添加默认网关地址：<code>rote add default gw &lt;运营商的网关地址&gt;</code></li>
+<li>重启网络的命令：<code>sudo /etc/init.d/networking restart</code></li>
+</ul>
+</li>
+<li>拨号上网：<ul>
+<li>安装rp-PPPoE软件包</li>
+<li>执行<code>pppoe-setup</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+</div><h2 id="2-6-正则表达式"><a href="#2-6-正则表达式" class="headerlink" title="2.6 正则表达式"></a>2.6 正则表达式</h2><div class="story post-story"><blockquote>
+<p><strong>信条：</strong>要熟练使用Linux，离不开正则表达式</p>
+</blockquote>
+<p>文本：指字符串的集合，其中的字符来自于一个有限的字符集合。</p>
+<h3 id="2-6-1-定义"><a href="#2-6-1-定义" class="headerlink" title="2.6.1 定义"></a>2.6.1 定义</h3><p>就是用来描述任意文本的一种特殊表达式。</p>
+<h3 id="2-6-2-含义"><a href="#2-6-2-含义" class="headerlink" title="2.6.2 含义"></a>2.6.2 含义</h3><ul>
+<li><p>两个基本要素</p>
+<ul>
+<li>表达式<code>ε</code>表示一个文本，仅包含一个长度位0的字符串，可以理解为{<code>NULL</code>}。通常<code>NULL</code>记作<code>ε</code></li>
+<li>对字符集中的任意字符<code>a</code>，表达式<code>a</code>表示仅有一个字符<code>a</code>的文本，即{<code>a</code>}</li>
+</ul>
+</li>
+<li><p>三个基本运算规则</p>
+<ul>
+<li><strong>两个</strong>正则表达式的<strong>并</strong>，记作<code>X|Y</code>，表示的文本是正则表达式X表示的文本与正则表达式Y表示的文本的<strong>并集</strong>。eg：a|b所得的文本就是{a，b}</li>
+<li><strong>两个</strong>表达式的<strong>连接</strong>，记作<code>XY</code>，表示的文本是将X文本中的每一个字符串后面连接上Y文本中的每一个字符串之后，再把所有这种连接的结果组成一种新的文本，比如X&#x3D;a|b，Y&#x3D;c|d，那么XY所表示的文本就是{ac，bc，ad，bd}</li>
+<li><strong>一个</strong>正则表达式的<strong>克林闭包</strong>，记作<code>X*</code>，表示分别讲0个、1个、2个….n个X与自己相连，然后再把所有这些求并，也就是说<code>X* = ε|X|XX|XXX|....</code>，比如a*这个正则表达式，表示的就是无穷文本{<code>ε，a，aa，aaa，....</code>}</li>
+</ul>
+<blockquote>
+<p>优先级：</p>
+<p>克林闭包 &gt; 连接运算 &gt; 并运算</p>
+</blockquote>
+</li>
+<li><p>扩展运算</p>
+<ul>
+<li><code>[]</code>表示<strong>括号内</strong>的字符做<strong>并运算</strong>，同时括号内支持范围描述符<code>-</code>，如<code>[abcd]=[a-d]=a|b|c|d</code>，注意如果使用‘-’字符的普通意义，需要将其放在方括号的开头或者最后</li>
+<li>方括号中以<code>^</code>字符开头，表示在字符集中<strong>排除</strong>方括号中所有的字符之后，<strong>所剩</strong>字符的<strong>并运算</strong>，如[<code>^ab</code>]则表示除了ab以外的所有字符求<strong>并</strong></li>
+<li><code>X?</code>表示<code>X|ε</code>，表示X与空字符串之间<strong>可选</strong></li>
+<li><code>X+</code>表示<code>XX*</code>，这等于限制X<strong>至少要重复</strong>1次</li>
+</ul>
+</li>
+</ul>
+<hr>
+</div><h2 id="2-7-文本搜索"><a href="#2-7-文本搜索" class="headerlink" title="2.7 文本搜索"></a>2.7 文本搜索</h2><div class="story post-story"><h3 id="2-7-1-定义"><a href="#2-7-1-定义" class="headerlink" title="2.7.1 定义"></a>2.7.1 定义</h3><p><code>grep</code>（global search regular expression (RE)and print out the line，全面搜索正则表达式并逐行打印）就是<strong>使用正则表达式用来检索文件内容的强大工具</strong>。</p>
+<p><code>grep</code>是一个家族，包含<code>grep</code>，<code>egrep</code>，<code>fgrep</code></p>
+<h3 id="2-7-2-工作机制"><a href="#2-7-2-工作机制" class="headerlink" title="2.7.2 工作机制"></a>2.7.2 工作机制</h3><p>它在一个或者多个文件中搜索字符串模板，字符串模板使用正则表达式来描述，如果模板包含空格，需要使用引号括起来。模板后面的所有字符串被看做文件名，搜索的所有结果被送到标准输出。它还能从标准输入中搜索，所以结合<strong>管道</strong>使用</p>
+<h3 id="2-7-3-支持的正则表达式"><a href="#2-7-3-支持的正则表达式" class="headerlink" title="2.7.3 支持的正则表达式"></a>2.7.3 支持的正则表达式</h3><table>
+<thead>
+<tr>
+<th align="center">元字符</th>
+<th align="center">匹配对象</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">^</td>
+<td align="center">表示<strong>句</strong>首。如^abc表示以abc开首的句子</td>
+</tr>
+<tr>
+<td align="center">$</td>
+<td align="center">表示<strong>句</strong>尾。如abc$表示以abc结尾的句子</td>
+</tr>
+<tr>
+<td align="center">*</td>
+<td align="center">表示前一个字符集出现次数为0或多次。如ab*c表示a与c之间可有0或者多个b存在。</td>
+</tr>
+<tr>
+<td align="center">[]</td>
+<td align="center">匹配一个指定范围内的字符，如^[0-9]表示以数字开始的行</td>
+</tr>
+<tr>
+<td align="center">[^]</td>
+<td align="center">匹配一个不在指定范围内的字符，如<code>\[^(D-F)level]</code>表示匹配不包含D-F的一个字母开头并紧跟level的行</td>
+</tr>
+<tr>
+<td align="center">(…)</td>
+<td align="center">匹配一个不在指定范围内的字符，如<code>\&#39;(magic)\&#39;</code>，magic标记为1</td>
+</tr>
+<tr>
+<td align="center"><code>\&lt;</code></td>
+<td align="center">表示<strong>词</strong>首。如<code>\&lt;abc</code>表示以abc开首的词</td>
+</tr>
+<tr>
+<td align="center"><code>\&gt;</code></td>
+<td align="center">表示<strong>词</strong>尾。如<code>abc\&gt;</code>表示以abc结尾的词</td>
+</tr>
+</tbody></table>
+<h3 id="2-7-4-排序和去重"><a href="#2-7-4-排序和去重" class="headerlink" title="2.7.4 排序和去重"></a>2.7.4 排序和去重</h3><ul>
+<li><p>统计你最常用的十条历史命令及其使用次数：</p>
+<p><code>cut -d&#39; &#39; -f1 ~/.bash_history|sort -d | uniq -c|sort -nr|head</code></p>
+</li>
+</ul>
+<h3 id="2-7-8-文件对比命令"><a href="#2-7-8-文件对比命令" class="headerlink" title="2.7.8 文件对比命令"></a>2.7.8 文件对比命令</h3><ul>
+<li><code>diff</code></li>
+</ul>
 
+</div>
   </div>
   
+  
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=https://xiaochuanfu.github.io/2022/11/05/Linux%E5%9F%BA%E7%A1%80/>https://xiaochuanfu.github.io/2022/11/05/Linux%E5%9F%BA%E7%A1%80/</a></p>
+              
+            
+          </blockquote>
+        </div>
+      
+      
+    </div>
   
   
     
@@ -2877,10 +3408,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-11-02T23:02:32+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-11-05T21:55:35+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Nov 2, 2022</p>
+    <p>更新于：Nov 5, 2022</p>
   </a>
 </div>
 
@@ -2888,6 +3419,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/linux/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>linux</p></a></div>
+  <span hidden itemprop="keywords">linux</span>
+
 
         
       
@@ -2899,7 +3434,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xiaochuanfu.github.io/media/placeholder/README.html&title= - XiaoFu's Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xiaochuanfu.github.io/2022/11/05/Linux%E5%9F%BA%E7%A1%80/&title=Linux - XiaoFu's Blog&summary="
           
           >
           
@@ -2911,7 +3446,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xiaochuanfu.github.io/media/placeholder/README.html&title= - XiaoFu's Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xiaochuanfu.github.io/2022/11/05/Linux%E5%9F%BA%E7%A1%80/&title=Linux - XiaoFu's Blog&summary="
           
           >
           
@@ -2923,7 +3458,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xiaochuanfu.github.io/media/placeholder/README.html&title= - XiaoFu's Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xiaochuanfu.github.io/2022/11/05/Linux%E5%9F%BA%E7%A1%80/&title=Linux - XiaoFu's Blog&summary="
           
           >
           
@@ -2954,6 +3489,35 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
   
+    <div class="prev-next">
+      
+        <a class='prev' href='/2022/11/05/html/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>html</p>
+          <p class='content'>HTML(HyperText Markup Language)前言软件架构
+B&#x2F;S
+Browser/Server   网站
+
+C&#x2F;S
+Client/Server       ...</p>
+        </a>
+      
+      
+        <a class='next' href='/2022/03/10/css/'>
+          <p class='title'>xiao<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>CSS层叠样式表一、css的语法
+什么是css？
+层叠样式表
+
+命名规则：
+使用字母、数字或下划线和减号构成，不要以数字开头
+
+格式： 
+选择器{属性:值;属性:值;属性:值;….}
+其中选择器...</p>
+        </a>
+      
+    </div>
+  
   <!-- Custom Files postEnd begin-->
   
   <!-- Custom Files postEnd end-->
@@ -2965,7 +3529,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <article class="post white-box reveal shadow" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/media/placeholder/README.html#comments">
+      <meta itemprop="discussionUrl" content="/2022/11/05/Linux%E5%9F%BA%E7%A1%80/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2998,7 +3562,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E6%96%87%E4%BB%B6%E7%9B%B8%E5%85%B3"><span class="toc-text">2.1. 文件相关</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E7%9B%B8%E5%85%B3"><span class="toc-text">2.2. 程序执行相关</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="toc-text">2.3. 软件安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-%E7%A3%81%E7%9B%98%E7%9A%84%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F"><span class="toc-text">2.4. 磁盘的管理方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-1-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-text">2.4.1 文件系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-2-%E7%A3%81%E7%9B%98%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-text">2.4.2 磁盘的基本操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-3-x2F-etc-x2F-fstab-%E6%96%87%E4%BB%B6"><span class="toc-text">2.4.3   &#x2F;etc&#x2F;fstab 文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-4-%E5%BC%B9%E6%80%A7%E8%B0%83%E6%95%B4%E5%AE%B9%E9%87%8F%E2%80%94%E2%80%94%E9%80%BB%E8%BE%91%E5%8D%B7"><span class="toc-text">2.4.4  弹性调整容量——逻辑卷</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-5-Linux-%E4%B8%8A%E7%BD%91%E9%97%AE%E9%A2%98"><span class="toc-text">2.5 Linux 上网问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-1-%E8%83%8C%E6%99%AF%E7%9F%A5%E8%AF%86%EF%BC%9A"><span class="toc-text">2.5.1 背景知识：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-2-%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE"><span class="toc-text">2.5.2 相关配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-6-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-text">2.6 正则表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-1-%E5%AE%9A%E4%B9%89"><span class="toc-text">2.6.1 定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-2-%E5%90%AB%E4%B9%89"><span class="toc-text">2.6.2 含义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-7-%E6%96%87%E6%9C%AC%E6%90%9C%E7%B4%A2"><span class="toc-text">2.7 文本搜索</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7-1-%E5%AE%9A%E4%B9%89"><span class="toc-text">2.7.1 定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7-2-%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="toc-text">2.7.2 工作机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7-3-%E6%94%AF%E6%8C%81%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-text">2.7.3 支持的正则表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7-4-%E6%8E%92%E5%BA%8F%E5%92%8C%E5%8E%BB%E9%87%8D"><span class="toc-text">2.7.4 排序和去重</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7-8-%E6%96%87%E4%BB%B6%E5%AF%B9%E6%AF%94%E5%91%BD%E4%BB%A4"><span class="toc-text">2.7.8 文件对比命令</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -3049,8 +3613,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="Linux";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3163,7 +3727,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1667656821138.js"></script>
+<script src="/js/app.js?time=1667656821183.js"></script>
 
 
 
@@ -3355,7 +3919,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1667656821138')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1667656821183')</script>
 
 
 
@@ -3484,19 +4048,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1667656821138")
+        volantis.js("/js/plugins/sites.js?time=1667656821183")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1667656821138")
+        volantis.js("/js/plugins/friends.js?time=1667656821183")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1667656821138")
+        volantis.js("/js/plugins/contributors.js?time=1667656821183")
       }
     
   };
@@ -3623,7 +4187,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1667656821138");
+    return volantis.js("/js/search/hexo.js?time=1667656821183");
   }
 
   function loadSearchService() {
@@ -3914,7 +4478,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"XiaoFu's Blog","url":"https://xiaochuanfu.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xiao","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xiaochuanfu.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xiaochuanfu.github.io/","name":"XiaoFu's Blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"XiaoFu's Blog","url":"https://xiaochuanfu.github.io/","keywords":"XiaoFu","description":"Blog","author":{"@type":"Person","name":"Xiao","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xiaochuanfu.github.io/","description":"Blog"},"publisher":{"@type":"Organization","name":"XiaoFu's Blog","url":"https://xiaochuanfu.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xiaochuanfu.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"XiaoFu's Blog","url":"https://xiaochuanfu.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xiao","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xiaochuanfu.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xiaochuanfu.github.io/","name":"XiaoFu's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xiaochuanfu.github.io/2022/11/05/Linux基础/","name":"Linux"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Linux","description":"","datePublished":"2022-11-05T13:33:32.000Z","dateModified":"2022-11-05T13:55:35.771Z","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://xiaochuanfu.github.io/2022/11/05/Linux%E5%9F%BA%E7%A1%80/"},"author":{"@type":"Person","name":"Xiao","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xiaochuanfu.github.io/"},"publisher":{"@type":"Organization","name":"XiaoFu's Blog","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://xiaochuanfu.github.io/2022/11/05/Linux%E5%9F%BA%E7%A1%80/","wordCount":0,"keywords":"linux","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
